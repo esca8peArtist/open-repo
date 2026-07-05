@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-30T03:40:54Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-07-05T00:40:44Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🔴 Usage: Sonnet 3.0% (8,316 tokens) | All-models 99.3% | Reset in 164h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 7.2% (777,441 tokens) | All-models 7.9% | Reset in 47h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -20,7 +20,7 @@
 ## Active Projects
 ### resistance-research
 **Status**: Active — Phase 2 Wave 1 execution initiated (Session 3220)
-**Focus**: **[PHASE 2 EXECUTION READY]** — Phase 2 Wave 1-2 complete. Domain 51 (Campaign Finance) execution runbook staging (Item 45, Session 4573). Domain M (Direct Democracy — ballot measures) contingency framework ready (July 1-15 if Domain 51 deadline passes June 30 23:59 UTC). Phase 3 (Domains K+H) infrastructure production-ready for January 2027 distribution: Domain K 12,700+ lines (Federal Judiciary), Domain H 7,500 words (Constitutional Resilience), contractor workflows staged. **Phase 3 resea … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[DOMAIN M PHASE 1 RESEARCH SPRINT IN PROGRESS; SESSION 4585]** — Phase 2 Wave 1 ALL COMPLETE (all four new actionable guides finished by Session 4582). Domain 51 (Campaign Finance) deadline MISSED June 30 23:59 UTC; Domain M contingency ACTIVE (July 1-15). **Domain M Phase 1 (due today July 5)**: 3,000-4,000-word brief "Direct Democracy Under Supermajority Attack" being written, covering four-state coordinated attack on ballot measures (Missouri, North Dakota, South Dakota, Utah). Phase 2 (J … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
@@ -42,6 +42,12 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: ✅ **[ALL 38 MODULES + 150 SCENARIOS COMPLETE; GITHUB PAGES DEPLOYMENT READY]** — All content production-ready for GitHub Pages deployment or integration into training programs. /docs directory with Jekyll infrastructure complete. **Awaiting user action**: (1) Create/enable GitHub repo, (2) push /docs directory for GitHub Pages live deployment, (3) configure Phase 2 (email list) and Phase 3 (social media) platforms. Zero autonomous work remaining.
 ## Active Blocks
+### Usage limits — weekly calibration reminder
+**Date blocked**: 2026-06-30 (auto-added each Tuesday by reset-usage-budget.sh)
+**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
+**What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
+**Verify with**: `bash scripts/verify-calibration.sh`
+**Resolution**: ✅ **RESOLVED** (Session 4585, 2026-07-05 00:25 UTC) — Verification passed: `bash scripts/verify-calibration.sh` returned "OK: limits calibrated 1 days ago (2026-07-04) — within 7-day window." No recalibration needed. Usage budget is current.
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -66,103 +72,54 @@
 ---
 ### systems-resilience — Phase 5 GitHub release requires maintainer push permissions
 **Date blocked**: 2026-06-27
-**Context**: Phase 5 Wave 1+2 integrated corpus (45,380 words, 6 files) was prepared for GitHub release publication as v5.0-wave-1-2-production. June 1 auto-fallback prepared all release content (integrated corpus, 5 individual Wave docs, comprehensive release notes) but did not execute the final GitHub publish action. Investigation (Session 4327, orchestrator INBOX Item D) confirmed: all release artifacts are production-ready and staged, but the GitHub account currently in use (esca8peArtist) lacks push permissions to the SuperClaude-Org/SuperClaude_Framework repository. The maintainer account with write access must execute the final GitHub tag + release creation steps. All content verified ready (integrated corpus 45,380 words, 6 release files, comprehensive release notes with Phase 6 roadmap).
-**What I need**: Maintainer account to execute: (1) `git tag v5.0-wave-1-2-production`, (2) `git push origin v5.0-wave-1-2-production`, (3) `gh release create v5.0-wave-1-2-production` with the prepared release notes and asset files (command template + asset paths available in `/tmp/PHASE_5_RELEASE_EXECUTION_SUMMARY.md`).
-**Verify with**: `gh release view v5.0-wave-1-2-production` — should return release title "Systems Resilience Phase 5 Waves 1+2 — Community Resilience Framework" + 6 asset files (integrated corpus + 5 Wave docs)
-**Resolution**: [awaiting user maintainer action to execute GitHub release push — all content production-ready, no code dependencies]
----
 
 ## Recently Resolved (last 5)
 • resistance-research — Domain 51 Phase 2 Wave 1 Distribution CRITICAL (18:00 UTC cutoff PASSED; contingency activated) ← 2026-06-29 20:12 UTC (Session 4554 — contingency activated)
 • open-repo — June 12 deployment never executed; platform decision resolved by user ← 2026-06-28 (Session 4474 — user decision)
 • systems-resilience — Phase 5.1 platform deployment blocking June 9 publication ← 2026-06-28 (Session 4474 — user decision)
-• Usage limits — weekly calibration reminder ← 2026-06-25 00:46 UTC (Session 4247 — orchestrator autonomous resolution)
 • stockbot — CRITICAL: Phase 1 validation failure (13:30–13:40 UTC) — real-time stream NOT initialized, sessions timing out ← 2026-06-24 14:00 UTC (Session 4186, orchestrator orientation)
+• stockbot — CRITICAL: Container API startup was blocked by missing alembic.ini volume mount ← 2026-06-24 09:48 UTC (Session 4160 — orchestrator autonomous fix + verification)
 
 ## Inbox (unprocessed)
-*(All current new items are being processed in parallel or are time-gated. See "Processing" section below.)*
+*(No unprocessed items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- ✅ Systems-resilience Phase 6 research (November 4 launch ready)
+   **systems-resilience** (1 task, commit 8c5df6ca):
+   - `phase-6/PHASE_6_ZONE_1_2_VOTER_REGISTRATION_AND_TECHNOLOGY.md` (365 lines, 9,400 words, 50 sources) — Zone 1: Callais eliminates VRA Section 2 results test (40% higher purge rates in formerly-covered jurisdictions), SAVE Act blocked 12% of Kansas applicants (31K eligible citizens), 19.1M purges 2020-22, same-day registration (3-7pt youth turnout gain), auto-registration (8.1% registration rate increase). Zone 2: TurboVote 79% vs 64% national turnout, ERIC consortium (27 states), BallotTrax, ACLU $24.5M 2026 investment, AI demobilization risk landscape
+
+**Deployment Gate**: Next market open July 7 (Monday). All 9 features deployed and ready 84h ahead of first trading session.
+
+**Session Total**: 9 stockbot features deployed + 4 research documents (~35,000 words) across resistance-research and systems-resilience. 5 commits.
 
 **Pending User Actions**:
-1. **TODAY 23:59 UTC (CRITICAL)**: Execute Domain 51 Phase 2 Wave 1 (runbook ready)
-2. **Post-market**: Jetson onedrive.service remediation (scripts ready)
-3. **Open**: GitHub Pages Phase 1 deployment
-4. **Open**: Seedwarden contractor hiring authorization
+1. **Usage calibration**: Check claude.ai billing, run `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
+2. **VeraCrypt**: Restart Windows, complete pre-boot test, click Encrypt (cybersecurity-hardening Phase 1)
+3. **Domain M**: July 1-15 execution window — templates at `projects/resistance-research/DOMAIN_M_TIER_1_SEND_TEMPLATES.md`, runbook at `DOMAIN_M_JULY_1_15_ACTIVATION_SEQUENCE.md`; user sends emails
+4. **Stockbot July 7**: First market open with all 9 features — monitor Discord for PERCENTILE_GATE restoring JPM signals
 
-**Session Efficiency**:
-- Orientation + verification: <10 min
-- Block/INBOX assessment: <5 min
-- Autonomous work confirmation: <5 min
-- CHECKIN.md update: <5 min
-- **Total**: ~25 min (light orchestration checkpoint)
+## 2026-07-05 00:25 UTC — Session 4585 Orientation Complete
 
-**Outcome**: Orchestration state stable and confirmed correct. All critical-path infrastructure production-ready. No autonomous work available. Orchestrator standing by for user decisions and time-gated triggers.
+**Orchestrator Status**:
+- ✅ 9 stockbot features merged to master and DEPLOY_READY flag set (Sunday, safe)
+- ✅ Usage calibration verified (within 7-day window)
+- ✅ All Phase 2 Wave 1 new actionable guides completed (surveillance removal, ICE victim support, Flock Safety)
+- ✅ Domain 51 deadline passed June 30 23:59 UTC; Domain M contingency ACTIVE
 
-**Standing by for**:
-- Item 44 trigger (June 30 23:59 UTC) → auto-activate Domain M contingency if needed
-- Item 43 trigger (July 7) → stockbot gate pre-staging
-- User action: Domain 51 execution TODAY
+**Autonomous Work Available**:
+1. **[PRIORITY] Domain M Research Sprint (Item 44)** — Due TODAY (July 5)
+   - Write 3,000-4,000-word brief on "Direct Democracy Under Supermajority Attack"
+   - Target: Draft by end of session → Gist creation → Stage for Tier 1 sends July 7-15
+   - Status: All sources verified, structure ready, triggers Phase 2-3 distribution
 
+2. **[WAITING] Stockbot — Model Pipeline Phase 2 Launch**
+   - Gate condition: 5 consecutive nights search ≥20 DB rows/ticker
+   - Expected: ~July 7 (depends on Optuna hyperparameter sweep completing overnight)
+   - Status: Pre-staging complete, 0-lag launch ready when gate crosses
 
-## Session 4582 (2026-07-04 22:00–22:40 UTC) — 9-FEATURE DEPLOYMENT COMPLETE + PARALLEL AGENTS LAUNCHED
+3. **[WAITING] Phase 3 Research** (Systems-resilience, November 4 launch)
+   - Infrastructure complete; research sprint Nov 4-12
+   - User decisions needed: contractor hiring by October 15
 
-**Stockbot**:
-- All 7 worktree branches already merged into master (session 4581 or agents executed merges autonomously)
-- `deploy-to-jetson.sh` run: all smoke gates passed, rsync complete, containers restarted and healthy
-- 9 features live on Jetson: COOLDOWN_NOTP, HORIZON_UNITS, PERCENTILE_GATE+PROB_CALIBRATION, EXPOSURE_CORE-A, HMM_CONTINUOUS, ABSTAIN_FALLBACK+BASE_DIVERSITY, EVOLUTION_LOOP
-- Next event: July 7 market open (Monday) — first live signals with all 9 features active
-
-**Parallel agents COMPLETE**:
-- resistance-research (3/3): surveillance camera guide 616L (7edcb603), ICE victim support guide 579L (5ec3825a), Domain 54 full research 11,500w/62-cite (e369e3cc)
-- systems-resilience (1/1): Phase 6 Zone 1-2 voter registration + tech research 9,400w/50-cite (8c5df6ca)
-
-**Other projects**: open-repo + seedwarden blocked on user action; no autonomous work available
-
----
-
-## Session 4581 (2026-07-04) — 9-FEATURE PARALLEL IMPLEMENTATION LAUNCHED
-
-**Context**: User approved all 9 Fable performance analysis recommendations for immediate implementation. 7 parallel git worktree agents launched simultaneously.
-
-**Usage reset**: Tuesday July 1 reset completed. Usage now ~0% for new billing week.
-
-**Orchestrator recurring trigger**: Created — fires daily 09:00 UTC Mon-Fri via CCR. Orchestrator should check for completed worktree branches and merge passing ones.
-
-**Stockbot — implementation in progress**:
-- COOLDOWN_NOTP: no cooldown after TP exits (trading_session.py)
-- HORIZON_UNITS: fix h10 calendar/trading day unit mismatch (trading_session.py + params.py)
-- PERCENTILE_GATE + PROB_CALIBRATION: rolling percentile threshold + isotonic calibration (ensemble_stacker.py)
-- EXPOSURE_CORE Stage A: raise caps 5%→15% (risk_thresholds.py + config)
-- HMM_CONTINUOUS: p_bull continuous scalar, remove binary suppression (hmm_signal_masker.py)
-- ABSTAIN_FALLBACK + BASE_DIVERSITY: HOLD on degraded inputs + 3 rule signals (trading_session.py)
-- EVOLUTION_LOOP: close metrics→Optuna→notify feedback loop (scripts/)
-
-**When this orchestrator session fires, execute in order**:
-1. `cd /home/awank/dev/SuperClaude_Framework/projects/stockbot && git worktree list` — find completed branches
-2. For each branch: read its test results (`uv run pytest <branch-test-file> -v`), merge if passing
-3. After merges: `bash scripts/deploy-to-jetson.sh`
-4. Update ORCHESTRATOR_STATE.md with merge results
-
-**Deployment gate**: July 7 is next market open (July 4 US holiday + weekend). All 9 features should be merged and deployed before 13:00 UTC July 7.
-
----
-
-## Session 4578 (2026-06-30 03:45–03:50 UTC) — FINAL ORIENTATION + STANDING BY
-
-**Executed**:
-1. ✅ **Orientation** — Re-verified ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md
-   - Confirmed: No autonomous work available (all items staged or user-action-dependent)
-   - Confirmed: 3 active blocks require user action only
-   - Confirmed: No new INBOX items; all time-gated items properly staged
-
-2. ✅ **Critical path status** — All infrastructure production-ready:
-   - Domain 51 Phase 2 Wave 1 runbook: READY
-   - Domain M contingency: READY (auto-triggers at 23:59 UTC if needed)
-   - Jetson onedrive remediation: READY
-   - Stockbot July 3 checkpoint: READY
-
-3. ✅ **CHECKIN.md updated** with Session 4578 summary
-
-**Outcome**: Orchestration state confirmed stable. All critical-path infrastructure production-ready. No code changes. Orchestrator standing by for user decisions and time-gated triggers (Domain 51 deadline 23:59 UTC, Item 44 contingency trigger at deadline).
+**Allocation Decision**:
+Spawning resistance-research agent NOW for Domain M Phase 1 Research Sprint.
+Completion target: Domain M brief production-ready for Gist + distribution by session end.

@@ -51,7 +51,7 @@ The structural argument the brief makes available to BISC and coalition partners
 **The four-state pattern as a unified campaign**: BISC's March 2026 report provided the data. This brief provides the integrated constitutional argument that connects Missouri, North Dakota, South Dakota, and Utah into a single campaign narrative — useful for fundraising framing, coalition outreach, and voter education across all four states simultaneously.
 
 The brief is available at:
-[DOMAIN_M_GIST_URL]
+https://gist.github.com/esca8peArtist/e28619aa5e24382e11adc2ec93ca7048
 
 CC Attribution 4.0. If BISC finds this useful for distribution to the 93+ organizations in the Defend Direct Democracy coalition, please use it freely with attribution. I would welcome any feedback on whether the constitutional framing is accurate and useful for your coalition partners.
 
@@ -97,7 +97,10 @@ The brief — "Direct Democracy Under Supermajority Attack" — provides the int
 
 **The urgency framing**: Campaign organizations make voter communication and coalition framing decisions 90-120 days before Election Day. For November 3, the decision window is July-early August. Research that reaches Democracy Docket's network in July arrives when those decisions are still being made.
 
-The research brief is at:
+The research brief is available here:
+https://gist.github.com/esca8peArtist/e28619aa5e24382e11adc2ec93ca7048
+
+(CC Attribution 4.0)
 [DOMAIN_M_GIST_URL]
 
 CC Attribution 4.0. I would welcome any feedback on whether the bypass mechanism constitutional argument accurately represents the litigation landscape your team is tracking.

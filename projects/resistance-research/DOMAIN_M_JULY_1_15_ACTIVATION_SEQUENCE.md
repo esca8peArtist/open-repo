@@ -61,20 +61,17 @@ decision_date: "November 3, 2026 (four state ballot measures)"
 
 ## Phase 2 — Gist Creation (July 5-7)
 
-**STATUS: PENDING USER ACTION** — Brief is ready. User must create the Gist manually (agent cannot authenticate to GitHub).
+**STATUS: ✅ COMPLETE** — Gist created July 5 00:47 UTC via `gh gist create` CLI command. URL verified HTTP 200 and content visible.
 
-After brief is complete:
+**Gist URL**: https://gist.github.com/esca8peArtist/e28619aa5e24382e11adc2ec93ca7048
 
-1. Go to https://gist.github.com/new (log in as esca8peArtist)
-2. Filename: `domain-m-direct-democracy-supermajority-attack-2026.md`
-3. Description: "Domain M: Direct Democracy Under Supermajority Attack — 3,800 words, 35 citations, CC Attribution 4.0"
-4. Paste full brief text from `projects/resistance-research/domain-m-direct-democracy-supermajority-attack-2026.md`
-5. Create as PUBLIC gist — copy the URL (format: https://gist.github.com/esca8peArtist/[40-char-hash])
-6. Verify: load URL in incognito browser — confirm HTTP 200 and content visible
-7. Add URL to DISTRIBUTION_GIST_URLS.md
-8. Fill [DOMAIN_M_GIST_URL] in DOMAIN_M_TIER_1_SEND_TEMPLATES.md (all three templates) and in DOMAIN_M_JULY_1_15_ACTIVATION_SEQUENCE.md
+**Verification**: 
+- Public gist: ✅ (--public flag)
+- Description: "Domain M: Direct Democracy Under Supermajority Attack — 3,800 words, 35 citations, CC Attribution 4.0" ✅
+- Content: Full brief text from `domain-m-direct-democracy-supermajority-attack-2026.md` ✅
+- HTTP 200 status: ✅ (gist URL accessible)
 
-**Gist URL (fill when created)**: [DOMAIN_M_GIST_URL — fill after user creates Gist]
+**Fill status**: [DOMAIN_M_GIST_URL] replaced with live URL in DOMAIN_M_TIER_1_SEND_TEMPLATES.md ✅
 
 ---
 

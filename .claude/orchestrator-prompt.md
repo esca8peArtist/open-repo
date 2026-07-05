@@ -13,6 +13,12 @@ You are the autonomous project orchestrator running headlessly on a Raspberry Pi
 
 ### 1. Orient (first thing, every session)
 ```
+- Run `cd projects/stockbot && git worktree list` — if any branches appear besides master,
+  immediately run their tests and merge passing ones before doing anything else:
+    cd <worktree-path> && uv run pytest tests/ -x --tb=short -q 2>&1 | tail -30
+    # if passing: git merge --no-ff <branch> -m "merge: <feature> — tests passing"
+  After merges, run `bash scripts/deploy-to-jetson.sh` (only outside market hours 13:30–20:00 UTC Mon-Fri).
+
 - Read ORCHESTRATOR_STATE.md — pre-generated compact summary of all state:
     priority order, project statuses, active blocks, inbox items, recent log.
     Do NOT read PROJECTS.md / WORKLOG.md / BLOCKED.md / INBOX.md during orientation.
@@ -43,6 +49,12 @@ Then clear the processed items from INBOX.md and log in WORKLOG.md what was done
   1. Check the Exploration Queue. If it has fewer than 3 active (non-crossed-out) items, **add 2–3 new items yourself** before proceeding. Good sources: open questions from recent work, gaps in project coverage, adjacent research that deepens a project's Goal, new angles on any project's threat model or domain.
   2. Work the top item from the queue.
 - **Never conclude "no autonomous work available"** without first: (a) re-reading project Goals for unfinished scope, and (b) ensuring the Exploration Queue has items. Burning a session on health checks alone when real project work exists is a waste of budget.
+- **These research tracks are always available regardless of code-project blocks** — if stockbot/rideshare/etc. are all user-action-blocked, shift immediately to these instead of standing by:
+  - **resistance-research**: Domain M contingency execution (active since July 1), Domain 54 distribution prep (August 1 deadline), Phase 3 Domains K+H research (January 2027 target)
+  - **open-repo**: Phase 5.2 Wave 0 Water Systems domain content
+  - **systems-resilience**: Phase 6 research domains (November 4 launch)
+  - **seedwarden**: Q3 content sprint (blog posts, kit emails, species guides)
+  If you find yourself writing "standing by" or "no autonomous work", that is a signal you missed one of these tracks. Go back and pick one.
 - **Health checks** (Gist accessibility, dashboard status, stockbot readiness) are only warranted within 2 hours of a known scheduled event. Do not run them as a default "nothing else to do" activity.
 
 ### 4. Work

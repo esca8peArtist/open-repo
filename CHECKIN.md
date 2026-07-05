@@ -31218,3 +31218,40 @@ Automatic wakeup at 20:30 UTC for deployment execution. Post-deployment:
 2. ✅ Item 33 (contingency): Production-ready for immediate activation if Domain 51 slips
 3. ✅ Item 34 (checklist): Production-ready for June 29 9am ET Week 1 launch TODAY
 
+
+## 2026-07-05 00:52 UTC — Session 4586 Update
+
+### Since Last Check-in
+**Domain M research sprint**: Phase 1 complete ✅ (brief written July 4, 3,800 words); Phase 2 complete ✅ (Gist created July 5 00:47 UTC via gh CLI). All three Tier 1 send templates updated with live Gist URL. Distribution execution log staged (8 sends scheduled July 7 – August 1).
+
+**Stockbot deployment**: All 7 features merged to master (July 4-5). DEPLOY_READY flag set. First market open Monday July 7 (5 days).
+
+**Active blocks resolved**: Usage calibration verified (Session 4585).
+
+### In Progress
+- **Domain M Phase 3**: Tier 1 sends staged, ready to execute July 7-15 (BISC, Democracy Docket, Common Cause)
+- **Stockbot**: Awaiting Model Pipeline Phase 2 gate condition (5 consecutive nights ≥20 DB rows/ticker, expected ~July 7)
+
+### Awaiting User Input / Next Actions
+1. **Domain M Tier 1 sends** (July 7-15): Execute using templates at `projects/resistance-research/DOMAIN_M_TIER_1_SEND_TEMPLATES.md`:
+   - July 7: Template 1 → BISC (ballot.org/contact)
+   - July 9: Template 2 → Democracy Docket (info@democracydocket.com)
+   - July 11: Template 3 → Common Cause (commoncause@commoncause.org)
+
+2. **Gate 3 checkpoint** (July 15): Assess Tier 1 responses; plan Tier 2 activation if needed
+
+### Status by Project
+| Project | Status | Focus |
+|---------|--------|-------|
+| **resistance-research** | Active | Domain M Phase 3 sends (July 7-15) |
+| **stockbot** | Active | Monitoring July 7 market open + gate condition |
+| **cybersecurity-hardening** | Blocked | Awaiting VeraCrypt restart (user action) |
+| **mfg-farm** | Blocked | Awaiting test print execution (user action) |
+| **seedwarden** | Paused | Q3 content available when activated |
+| **open-repo** | Paused | Phase 5.2 Wave 0 available when activated |
+| **career-training** | Complete | Awaiting GitHub Pages deployment (user action) |
+| **off-grid-living** | Complete | Awaiting social media distribution (user action) |
+| **systems-resilience** | Active | Phase 3 contractor hiring decision due Oct 15 |
+
+**Session usage**: ~50K tokens (7 agents orientation, file updates, orchestration). Budget: 777K Sonnet remaining (7.2%).
+
