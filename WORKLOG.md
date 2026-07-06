@@ -1,5 +1,42 @@
 # Open-Repo Project Worklog
 
+## Wave 2 Domain 1: Natural Building Techniques — Full Production Document (2026-07-05)
+
+**Completion Date**: 2026-07-05
+
+**Agent**: Claude Sonnet 4.6 (General Research Agent)
+
+**Objective**: Write the complete production-ready Domain 1 content document for Phase 5.2 Wave 2 (Natural Building Techniques), ~12,000–15,000 words, covering cob, earthbag, strawbale, compressed earth block, and repair/maintenance.
+
+### File Produced
+
+- **`/home/awank/dev/SuperClaude_Framework/projects/open-repo/content/WAVE_2_DOMAIN_1_NATURAL_BUILDING_TECHNIQUES.md`** — Production-ready natural building guide (~13,800 words). Five sections: (1) Cob construction — tarp mixing method, clay-sand-straw ratios starting at 2:1 sand:clay, four mix tests (shake, squeeze, drop, tile shrinkage), 8–10 inch coursing lifts, 6–9 month cure timeline, compressive strength 41–231 psi; (2) Earthbag construction — gravel foundation courses, 4-point 12.5-gauge barbed wire between every course, dome geometry via center pole method, 14-foot dome bag count estimate (~800–870 bags), thermal mass R-1 to R-3 for 18-inch wall; (3) Strawbale construction — R-33 per 23-inch wall, hay probe moisture testing protocol with 15%/20% pass/fail thresholds, load-bearing vs. infill comparison, pre-compression requirement for Nebraska style, three-coat plaster schedule; (4) Compressed earth block — ribbon test, ball test, jar test for soil selection, 5–10% Portland cement stabilization achieving 500–2,000 psi at 28 days, curing protocol, mortar options; (5) Repair and maintenance — crack triage (cosmetic vs. structural), repointing procedure, lime wash weatherproofing, emergency tarping, water damage remediation stages. Cross-links to WAVE_0_DOMAIN_2 (rainwater harvesting / cistern integration), WAVE_0_DOMAIN_4 (greywater setbacks), WAVE_1 composting, and WAVE_1 seed preservation throughout.
+
+### Key Research Findings
+
+- CRI (Cob Research Institute) code minimums: 60 psi standard wall, 85 psi braced panel; current cob code (IRC-approved in several states) is a peer-reviewed standard, not just practitioner consensus
+- Earthbag thermal performance (R-1 to R-3) is significantly lower than often claimed in promotional literature; cold-climate suitability is poor
+- Strawbale R-33 is the most robustly documented natural building R-value, sourced from ACEEE peer-reviewed empirical data
+- CEB strength range is extremely variable (150 psi unstabilized to 2,000+ psi at 10% cement); site-specific testing per OSE's own recommendation is non-negotiable
+- UV degradation of polypropylene earthbag bags begins within weeks; 4–6 week plaster deadline is a hard structural requirement, not a suggestion
+- One Community Global engineering hub was not directly accessible for verification; content based on compatible open practitioner literature
+
+### Confidence by Sub-Topic
+
+| Sub-topic | Confidence | Notes |
+|---|---|---|
+| Cob | 85% | Mix ratios well-sourced; 6–9 month drying time is practitioner consensus only |
+| Earthbag | 88% | Dome geometry and barbed wire specs well-documented; thermal R-value is conservative |
+| Strawbale | 90% | Best-documented natural building technique; IRC Appendix BJ available |
+| CEB | 83% | Strength data highly variable by soil; site testing is genuinely required |
+| Repair/Maintenance | 88% | Crack assessment criteria consistent across sources |
+
+### Sources Used (Key)
+
+- This Cob House, The Year of Mud, EarthbagBuilding.com, Waldenlabs, Natural Building Blog, Green Building Advisor, Strawbale.com, Off-Grid Workshop, OSE GVCS Wiki, CRI/cobcode.org, ACEEE 1998 R-value study, IRC 2024 Appendix BJ, Auroville Earth Institute, ScienceDirect cob review
+
+---
+
 ## Career Training Phase 2 Launch Infrastructure (2026-06-29)
 
 **Completion Date**: 2026-06-29
