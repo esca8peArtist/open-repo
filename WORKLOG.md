@@ -1,5 +1,94 @@
 # Open-Repo Project Worklog
 
+## Wave 2 Domain 3: Sanitation and Hygiene — Emergency Protocols (2026-07-05)
+
+**Completion Date**: 2026-07-05
+
+**Agent**: Claude Sonnet 4.6 (General Research Agent)
+
+**Objective**: Write the complete production-ready Domain 3 content document for Phase 5.2 Wave 2 (Sanitation and Hygiene Systems), 8–10k words, covering emergency latrine systems, composting toilets, handwashing protocols, disease prevention, vulnerable populations, and WASH organizational coordination.
+
+### File Produced
+
+- **`/home/awank/dev/SuperClaude_Framework/projects/open-repo/docs/wave-2-sanitation-hygiene/sanitation-hygiene-emergency-protocols.md`** — Production-ready sanitation guide (~9,600 words, CC BY 4.0). Six sections: (1) Emergency water sanitation assessment — fecal-oral cycle, rapid triage, Sphere quantity standards (7.5L/person/day minimum); (2) Waste management and latrine systems — single pit (3m depth, 1,000L minimum, ferro-cement slab construction), VIP latrine (11cm vent pipe, fly trap mechanism, smoke test), composting toilets (two-chamber, 55°C/14-day pathogen kill standard), emergency-phase trench and bucket systems; (3) Hygiene protocols — tippy-tap construction (50ml per wash, 90%+ water reduction vs. tap), ash as soap alternative, crowded-shelter disease vectors; (4) Disease prevention — priority diseases (cholera, typhoid, hepatitis A/E, shigellosis, cryptosporidiosis) with case fatality rates, ORS home formula (6 tsp sugar + 0.5 tsp salt per liter), dosing protocol by dehydration severity, environmental decontamination chlorine mixing; (5) Vulnerable populations — group transit cat-hole and trench protocols, menstrual hygiene management (infrastructure requirements, materials, disposal), pediatric hygiene (child feces management, dehydration signs, latrine adaptation), elderly/mobility-limited (seated latrine conversion, in-room collection vessels); (6) WASH coordination — cluster registration, 3W reporting, 100-person procurement kit, rapid adaptation playbooks for three scenarios (urban collapse, flood contamination, long-term off-grid).
+
+### Key Research Findings
+
+- Sphere Standards: 1 latrine per 50 people (acute), 1 per 20 (sustained); 30-meter minimum setback from water sources
+- Tippy-tap water use: 50 ml per wash vs. 500+ ml conventional — critical for water rationing decisions
+- Composting toilet pathogen kill: 55°C for 14 days OR 60°C for 7 days — thermometer verification required; ambient temperature alone is insufficient
+- Home ORS formula: 6 level teaspoons sugar + 0.5 level teaspoon salt per 1 liter of clean water (MSF/WHO validated)
+- VIP fly trap mechanism requires dark interior to function — most VIP failures involve light leakage around the drop hole
+- Hepatitis E case fatality rate is 15–25% in pregnant women — a critical flag for antenatal population management in displacement
+- Tippy-tap systematic review (PMC7316639): handwashing after toilet use rose from 5.5% to 65% with installation; adoption exceeded 80% in structured rollout
+- UNHCR WASH Manual 8th Edition (March 2026) is the current authoritative standard
+
+### Confidence by Sub-Topic
+
+| Sub-topic | Confidence | Notes |
+|---|---|---|
+| Pit latrine construction | 88% | Dimensions and pit sizing from Sphere/UNICEF Ghana technical guidelines |
+| VIP latrine | 90% | Fly trap mechanism well-documented across multiple sources |
+| Composting toilet | 87% | Thermophilic requirements solid; two-chamber sizing is practitioner guidance not clinical trial data |
+| ORS protocol | 92% | MSF Medical Guidelines + WHO publications |
+| Disease priority ranking | 90% | WHO/CDC consensus; CFR ranges are literature ranges, not point estimates |
+| Vulnerable populations | 83% | MHM guidance from UNHCR 2026; pediatric specifics from WHO; some field adaptation is judgment-based |
+| WASH coordination | 85% | Cluster system well-documented; procurement quantities are estimates scaled from Sphere ratios |
+
+### Sources Used (Key)
+
+- UNHCR WASH Manual 8th Edition March 2026, Sphere Standards WASH Chapter, CAWST Latrine Resources, Humanitarian Sanitation Hub (sanihub.info), MSF Medical Guidelines, WHO Communicable Diseases After Natural Disasters, Humanure Handbook 4th Edition, Global Handwashing Partnership, PMC Tippy-Tap Review (PMC7316639), PMC Post-Disaster Disease Review (PMC3263111), PMC Ash Handwashing Review (PMC7192094), UNICEF Sudan Emergency Technical Guidelines, Emersan Compendium
+
+---
+
+## Wave 2 Domain 4: Herbal Medicine and Botanical Care for Emergency Response (2026-07-05)
+
+**Completion Date**: 2026-07-05
+
+**Agent**: Claude Sonnet 4.6 (General Research Agent)
+
+**Objective**: Write the complete production-ready Domain 4 content document for Phase 5.2 Wave 2 (Herbal Medicine and Botanical Care), ~11,800 words, covering evidence-graded herbal protocols for humanitarian and resource-constrained settings.
+
+### File Produced
+
+- **`/home/awank/dev/SuperClaude_Framework/projects/open-repo/docs/wave-2-herbal-medicine/herbal-medicine-emergency-protocols.md`** — Production-ready herbal medicine guide (~11,800 words). Six sections: (1) Nine herbs with strongest evidence base (garlic, ginger, honey, turmeric, elderberry, echinacea, calendula, broadleaf plantain, willow bark) — each with mechanism of action, evidence grade (High/Moderate/Preliminary), preparation methods, and safety/contraindication tables; (2) Infection prevention and wound care — evidence hierarchy for wound care in resource-constrained settings, antiseptic herb protocols (thyme, oregano, rosemary), escalation triggers for when herbal care is insufficient; (3) Gastrointestinal and digestive support — WHO ORS formulation with improvised recipe, rice water ORS, herbal adjuncts (ginger, peppermint, chamomile, berberine/goldenseal), diarrhea mortality context (69% mortality reduction with ORS); (4) Respiratory and immune support — fever management, cough protocols (honey, thyme-honey syrup, licorice root with safety warnings), high-risk population guidance; (5) Pain, inflammation, and chronic condition management — herbal analgesic protocols, drug-herb interaction table (13 major interactions), chronic disease support in displacement; (6) Cultivation, preservation, and seed saving — 10-herb priority cultivation table, air-drying/dehydrator/oven protocols, seed saving by life cycle category, seasonal availability planning with minimum dry stock targets, cross-links to water/sanitation/composting domains. Appendix A: Master escalation triggers. Appendix B: Evidence grade quick reference.
+
+### Key Research Findings
+
+- WHO Global Traditional Medicine Strategy 2025-2034 (adopted May 26, 2025 by Member States) explicitly supports evidence-based integration of traditional plant medicines into primary care where pharmaceutical access is limited
+- Honey (raw, unpasteurized) has High-grade clinical evidence for wound care — effective against MRSA; Manuka honey approved for clinical wound use in US, EU, Australia, NZ, Canada; infant botulism risk under 12 months is absolute contraindication
+- Oral rehydration therapy reduces diarrheal mortality 69%; no herbal preparation approaches this efficacy — herbs are adjuncts only
+- Willow bark has Moderate evidence for musculoskeletal pain at 240mg salicin/day; does not replace NSAIDs for moderate-to-severe pain; carries aspirin cross-allergy and Reye's syndrome risks identical to aspirin
+- Berberine/goldenseal has an absolute pregnancy contraindication (uterotonic, crosses placenta, neonatal jaundice risk)
+- Peppermint menthol near infants under 2 can cause fatal laryngospasm — no peppermint preparations near infant airways
+- Echinacea and elderberry are contraindicated in autoimmune disease and immunosuppressive therapy (immune stimulation)
+- Licorice root at >3-4g root/day causes hypertension, hypokalemia, water retention — critical humanitarian contraindication in displaced populations with hypertension
+- Thyme essential oil shows potent anti-biofilm activity against MDR wound pathogens (PMC12391397, 2025)
+
+### Confidence by Sub-Topic
+
+| Sub-topic | Confidence | Notes |
+|---|---|---|
+| Evidence-graded herb profiles | 87% | Multiple meta-analyses and systematic reviews; mechanism of action well-sourced |
+| Wound care protocols | 83% | Honey high-grade; other herbs Moderate; escalation triggers from clinical consensus |
+| GI and rehydration | 85% | ORS is near-certain evidence; berberine limited to old small RCTs |
+| Respiratory support | 80% | Prevention data weaker than treatment data |
+| Pain management | 78% | Herbal analgesics genuinely modest vs. NSAIDs; caveat clearly stated |
+| Cultivation and preservation | 88% | Horticulture is well-established; seed viability from USDA/extension systems |
+
+### Sources Used (Key)
+
+- WHO Global Traditional Medicine Strategy 2025-2034, WHO/UNICEF ORS Monograph
+- PMC3941901 (honey systematic review), PMC11946416 (Manuka burns 2025), PMC7693943 (MRSA)
+- PMC3995184 (ginger pregnancy meta-analysis), PMC10607963 (willow bark meta-analysis 2023)
+- PMC8026097 (elderberry systematic review 2021), PMC12656484 (calendula 2025)
+- PMC10458736 (Plantago antimicrobial 2023), PMC9359829 (plantain burn RCT 2022)
+- PMC6337770 (peppermint IBS meta-analysis), PubMed 31121255 (curcumin meta-analysis 2019)
+- PMC12847374 (echinacea pediatric 2025), PMC7056460 (St. John's wort interactions)
+- PMC5552262 (herb-warfarin systematic review), NCCIH herb fact sheets, Merck Manual professional monographs
+
+---
+
 ## Wave 2 Domain 1: Natural Building Techniques — Full Production Document (2026-07-05)
 
 **Completion Date**: 2026-07-05
