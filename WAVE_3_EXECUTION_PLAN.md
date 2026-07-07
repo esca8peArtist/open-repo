@@ -39,7 +39,17 @@ Wave 3 extends open-repo Phase 5.2 knowledge base with 6 critical domains queued
 **Status**: Research + writing in progress (Session 4789 spawn)  
 **Note**: Emphasis on legal resilience + community coordination (de-escalation-focused, not militia approaches)
 
-### Domain 4: Animal Husbandry ⏳ **QUEUED**
+### Domain 7: First Aid and Emergency Medicine ✅ **COMPLETE**
+**Agent**: Claude Sonnet 4.6 (Session 4792)
+**Scope**: Patient assessment (ABCDE/SAMPLE), hemorrhage control, CPR (2024 AHA/RC guidelines), wound care and closure, fractures and splinting, burns (Rule of Nines), environmental emergencies (hypothermia/frostbite/heat stroke/drowning), medical emergencies (shock/anaphylaxis/stroke/seizure/diabetic), first aid kit assembly, emergency childbirth
+**Sources**: AHA/Red Cross 2024 First Aid Guidelines, NOLS Wilderness Medicine 7th ed., WMS CPGs 2024 (Heat, Spinal), TCCC 2024/2026, PMC11766969 (hemorrhage meta-analysis 2025), ABA guidelines, SAMHSA PFA, ACAAI, AAP
+**Confidence**: 88%
+**Output**: 912 lines, ~8,500 words
+**Commit**: Pending (this session)
+**File**: `docs/wave-3-first-aid-emergency-medicine/first-aid-emergency-medicine-complete-guide.md`
+
+### Domain 4: Animal Husbandry ✅ **COMPLETE (Session 4791)**
+**Output**: `docs/wave-3-animal-husbandry/animal-husbandry-complete-guide.md` (940 lines, 11,405 words, commit fa09db6a)
 **Scope**: Small-scale livestock (chickens, goats, rabbits), feed production, health management, breeding, slaughter + processing, seasonal management Zone 5  
 **Target Sources**: Land grant extension (NCSU, Ohio State, UMaine), USDA small-farm resources, permaculture societies  
 **Confidence Target**: 87%  
@@ -66,9 +76,9 @@ Wave 3 extends open-repo Phase 5.2 knowledge base with 6 critical domains queued
 
 | Phase | Domains | Sessions | Status |
 |-------|---------|----------|--------|
-| **Phase 1** | 1-3 (Fermentation, Energy, Security) | 4789-4790 | ✅ **IN PROGRESS** |
-| **Phase 2** | 4-6 (Animal, Water, Food) | 4791-4793 | ⏳ Queued |
-| **Phase 3** | Integration + testing | 4794+ | ⏳ Queued |
+| **Phase 1** | 1-3 (Fermentation, Energy, Security) | 4789-4790 | ✅ **COMPLETE** |
+| **Phase 2** | 4-6 (Animal, Water, Food) | 4791 | ✅ **COMPLETE** |
+| **Phase 3** | 7+ (First Aid, + TBD) | 4792+ | ✅ **IN PROGRESS** |
 
 **Critical Path**:
 - Session 4789: Agents 1-3 spawned (Fermentation, Energy, Security)
